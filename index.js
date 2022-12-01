@@ -4,17 +4,17 @@ const fs = require('fs');
 const _arg_url = process.argv[2];
 const _arg_title = process.argv[3];
 
-const _args = [process.argv[4], process.argv[5]];// Filter, Format
+const _args = [process.argv[4], process.argv[5]]; // Filter, Format
 
 let ytdl_option = {};
 
 if (_arg_url === undefined || _arg_url == "help") {
     console.log(
-        "How to use:\n"
-        + "   Argument 1: An url of the video\n"
-        + "   Argument 2: The save path (Requires enough privileges)"
-        + "   Argument 3, 4: Filter and Format (You can do the opposite)\n\n"
-        + 'For Example: https://youtube.com/watch?v=WJ16v-hD1mw "/home/user/music" audioonly mp3'
+        "How to use:\n" +
+        "   Argument 1: An url of the video\n" +
+        "   Argument 2: The save path (Requires enough privileges)" +
+        "   Argument 3, 4: Filter and Format (You can do the opposite)\n\n" +
+        'For Example: https://youtube.com/watch?v=WJ16v-hD1mw "/home/user/music" audioonly mp3'
     );
     return;
 }
