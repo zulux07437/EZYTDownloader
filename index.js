@@ -14,8 +14,10 @@ if (_arg_url === undefined || _arg_url == "help") {
         "   Argument 1: An url of the video\n" +
         "   Argument 2: The save path (Requires enough privileges)\n" +
         "   Argument 3, 4: Filter and Format (You can do the opposite)\n\n" +
-        'For Example: https://youtube.com/watch?v=WJ16v-hD1mw "/home/user/music" audioonly mp3\n\n' +
-        "Note: Spaces are used as separators. so recommends using quotes when entering the path."
+        'For example: https://youtube.com/watch?v=WJ16v-hD1mw "/home/user/music" audioonly mp3\n\n' +
+        "Note: " + 
+        "   Spaces are used as separators. so recommends using quotes when entering the path.\n" +
+        '   The end of the save path is used as the filename (For example, "/home/user/music" is equivalent to "/home/user/music.mp3")'
     );
     return;
 }
