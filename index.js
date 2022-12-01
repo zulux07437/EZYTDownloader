@@ -30,8 +30,6 @@ function check_args(args) {
     let result = true;
 
     args.some((arg) => {
-        if (!result) return; // resultがfalseになったらループから抜ける
-
         switch (arg) {
             case "audioonly":
                 ytdl_option.filter = arg;
@@ -49,6 +47,8 @@ function check_args(args) {
                 result = false;
                 break;
         }
+        
+        if (!result) return; // resultがfalseになったらループから抜ける
     });
     return result;
 }
