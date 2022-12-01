@@ -12,9 +12,10 @@ if (_arg_url === undefined || _arg_url == "help") {
     console.log(
         "How to use:\n" +
         "   Argument 1: An url of the video\n" +
-        "   Argument 2: The save path (Requires enough privileges)" +
+        "   Argument 2: The save path (Requires enough privileges)\n" +
         "   Argument 3, 4: Filter and Format (You can do the opposite)\n\n" +
-        'For Example: https://youtube.com/watch?v=WJ16v-hD1mw "/home/user/music" audioonly mp3'
+        'For Example: https://youtube.com/watch?v=WJ16v-hD1mw "/home/user/music" audioonly mp3\n\n' +
+        "Note: Spaces are used as separators. so recommends using quotes when entering the path."
     );
     return;
 }
@@ -47,7 +48,7 @@ function check_args(args) {
                 result = false;
                 break;
         }
-        
+
         if (!result) return; // resultがfalseになったらループから抜ける
     });
     return result;
